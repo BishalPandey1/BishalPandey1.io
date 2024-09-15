@@ -73,15 +73,15 @@
         }
         .contain h2{
             font-size: larger;
-            color:rgb(255, 255, 255);
+            color:rgb(212, 26, 236);
         }
         .contain h2 a{
-            color:rgb(255, 255, 255);
+            color:rgb(206, 26, 223);
             text-decoration: none;
             font-weight:bold;
         }
         .contain h2 a:hover{
-            color:rgb(255, 255, 255);
+            color:rgb(255, 230, 0);
 
         }
         .github-logo {
@@ -110,7 +110,29 @@
             100% {
                 transform: perspective(500px) rotateX(10deg) rotateY(10deg) translate(0, 0);
             }
-        }        
+        }
+        @keyframes rainbow {
+            0% { color: red; }
+            14% { color: orange; }
+            28% { color: yellow; }
+            42% { color: green; }
+            57% { color: blue; }
+            71% { color: indigo; }
+            85% { color: violet; }
+            100% { color: red; }
+        }
+
+        @keyframes breathing {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .rainbow-breathing-text {
+            font-size: 2em;
+            font-weight: bold;
+            animation: rainbow 5s infinite, breathing 3s infinite;
+        }
+        
     </style>
 </head>
 <body>
@@ -129,8 +151,8 @@
         </nav>     
     </header>
     <main>
-        <h1>Hi 👋 and wonderful wellcome, I'm Bishal Pandey.</h1>
-        <h2>A passionate Software Engineer from Nepal.</h2><br>
+        <h1 class="rainbow-breathing-text">Hi 👋 and wonderful wellcome, I'm Bishal Pandey.</h1>
+        <h2 class="rainbow-breathing-text">A passionate Software Engineer from Nepal.</h2><br>
         <div class="contain">
             <h2> 
                 Me myself introducing i am a student of BICTE studing in  <a href="https://sukuna.edu.np/">SUKUNA MULTIPLE CAMPUS</a>
@@ -146,7 +168,7 @@
                 
                 I am a quick learner with a lot of energy and enthusiasm. I am always eager to learn and grow, staying updated with the latest industry trends and technologies. My goal is to continuously improve my skills and contribute to innovative projects that make a difference. Let’s connect and explore how I can bring your ideas to life! <br><br><br>
                 For more click here<br>
-                <i class="fa fa-github github-logo"><a href="https://github.com/BishalPandey1">Click me</a></i>
+                <i class="fa fa-github github-logo",><a href="https://github.com/BishalPandey1">Click me</a></i>
 
                 </div>
 
