@@ -41,6 +41,63 @@
         .left{
             font-size:1.5rem;
         }
+        .prja{
+            border: solid red;
+        }
+        h2 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 2em;
+    text-shadow: 1px 1px 2px #aaa;
+}
+
+.image-table {
+    margin: 20px auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    width: 80%;
+    max-width: 800px;
+}
+
+.image-table td {
+    padding: 15px;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-table td:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.image-table img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-table img:hover {
+    transform: scale(1.1);
+}
+
+.image-table p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.1em;
+}
+.co{
+    color:bisque;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    height: auto;
+}
+
     </style>
 </head>
 <body>
@@ -58,6 +115,37 @@
             </div>
         </nav>     
     </header>
+    <main>
+        <h1 class="co">Some of my Simple Project are list bellow:</h1>
+        <table class="image-table">
+            <tr>
+                <td>
+                    <a href="quizeapp.html"><img src="quize.png" alt="Image 1"></a>
+                    <p>1 quize game</p>
+                </td>
+                <td>
+                    <a href="cal.html">
+                        <img src="ca.png" alt="Image 2">
+                    </a>
+                    <p>2 Simple Calculator</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="gn.html">
+                        <img src="gco.png" alt="Image 3">
+                    </a>
+                    <p>3 Global Clock</p>
+                </td>
+                <td>
+                    <a href="clco.html">
+                        <img src="timecou.png" alt="Image 4">
+                    </a>
+                    <p>4 Sport Time Counter</p>
+                </td>
+            </tr>
+        </table>
+    </main>
     
 </body>
 </html>
